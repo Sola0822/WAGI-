@@ -1,0 +1,29 @@
+html{width: 100%;}
+body{
+    margin: 0 auto;
+    padding: 0;
+    
+}
+header{
+    width: 100%;
+    height:100px;
+    background-color: #F9FFD5;
+    border-style: solid;
+}
+
+.my{float: left; text-align: left;}
+.love{float: right; text-align: right;}
+a{text-decoration-line: none; color: black; display: inline-block; margin: 10px;}
+a:hover{text-decoration-line: underline;}
+
+main{width: 100%; display: inline-block;}
+main > h1{width: 90%; background-color: aquamarine; text-align: center; margin-left: 5%;}
+
+#middle{width: 80%; height: 700px; display: inline;}
+#left{float: left; width: 20%; margin-left: 10%;}
+#right{float: left; width: 60%; border-style: solid; border-radius: 40px;}
+#img{float: left;}
+#img > img{ margin: 20px; height: 250px;}
+
+.food > li{color: lightcoral;}
+.animal > li{color: orange;}

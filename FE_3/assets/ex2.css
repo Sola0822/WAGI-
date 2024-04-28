@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 1024px;
+    width: 1440px;
+}
+.wrap{
+    width: 100%;
+    margin:0 auto;
+    position: relative;
+}
+.square1{
+    height: 1024px;
+    width: 1000px;    
+    background-color: #D7FAFF;
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+}
+.square2{
+    width: 470px;
+    height: 1024px;
+    background-color: #74B7C1;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -235px;
+}

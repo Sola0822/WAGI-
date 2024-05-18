@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 60%;
+    margin: 0 auto; /*가로 중앙 정렬*/
+}
+.box{
+    width: 500px;
+    height: 500px;
+}
+.blue{
+    background-color: skyblue;
+}
+.pink{
+    background-color: pink;
+}
+.black{
+    color: black;
+}
+.brown{
+    color: brown;
+}
+button{
+    width: 100px;
+    height: 80px;
+    margin: 20px;
+    font-size: large;
+}
+h1{
+    color: black;
+}

@@ -1,0 +1,78 @@
+html{width: 100%; height: 100%;}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+    background-color: #FAFFBC;
+}
+main{
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+}
+.right{
+    flex: 1;
+    background-color: #F7FF99;
+}
+.left{
+    flex: 1;
+    background-color: #BCFBFF;
+}
+footer{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.b_r{
+    flex: 1;
+    background-color: #E7EFFF;
+}
+.b_l{
+    flex: 4;
+    background-color: #FDFFEC;
+}
+
+/*css 전체 -> 800 -> 400 순으로 적용 / min-width도 있음*/
+/*태블릿 화면 크기 - 너비 800px까지의 범위*/
+@media(max-width: 800px){
+    header{ /*색 변경*/
+        background-color: #DBFFD7;
+    }
+    main{ /*세로 정렬*/
+        flex-direction: column; 
+    }
+    .right{ /*위로 올라감 & 색 변경*/
+        background-color: #FFF8BB;
+    }
+    .left{ /*아래로 내려감 & 색 변경*/
+        background-color: #BCFBFF; 
+    }
+    .b_r{ /*안 보임 처리*/
+        display: none;
+    }
+}
+
+/*모바일 화면 크기 - 너비 400px까지의 범위*/
+@media(max-width: 400px){
+    header{ /*색 변경*/
+        background-color: #FAFFBC;
+    }
+    .right{ /*안 보임 처리*/
+        display: none;
+    }
+    footer{ /*순서 반전*/
+        flex-direction: row-reverse;
+    }
+    .b_r{ /*보임 처리*/
+        display: flex;
+    }
+    .b_l{ /*비율 1:1 설정*/
+        flex: 1;
+    }
+}

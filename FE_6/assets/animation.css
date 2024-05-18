@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: skyblue;
+}
+.circle:hover{
+    animation: circle 1s ease-out alternate 4 forwards;    
+}
+.alarm{
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+    animation: alarm 0.3s linear infinite both;
+}
+.alarm:hover{animation-play-state: paused;}
+.box{
+    width: 300px;
+    height: 100px;
+    background-color:wheat;
+    animation: box 1s reverse both 3s;
+}
+
+@keyframes circle {
+    to{transform: translate(0px, 0px);}
+    from{transform: translate(0px, 50px);}
+}
+
+
+@keyframes alarm{
+    0%{transform: translate(0);}
+    20%{transform: translate(-2px, 2px);}
+    40%{transform: translate(-2px, -2px);}
+    60%{transform: translate(2px, 2px);}
+    80%{transform: translate(2px,-2px);}
+    100%{transform: translate(0);}
+}
+
+@keyframes box {
+    0%{margin-left: 0;}
+    100%{margin-left: 100px;}
+}

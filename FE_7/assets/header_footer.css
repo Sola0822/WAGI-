@@ -1,0 +1,79 @@
+html{width: 100%; height: 100%;}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column; /*세로 정렬*/
+    /*그라데이션 배경*/
+    background: linear-gradient(rgba(24, 131, 229, 0.3), rgba(255, 217, 80, 0.5));
+}
+header{
+    flex: 1;
+}
+.header{
+    height: 80px;
+    border-radius: 50px;
+    padding: 0px 5%;
+    background-color: #1883E5; opacity: 0.8;
+}
+.logo{
+    padding-top: 8px;
+    float: left;
+}
+.bar_button{
+    display: none;
+}
+.bar{
+    text-align: right;
+    float: right;
+    h4 > a{
+        display: inline-block;
+        padding: 3px;
+        color: black;
+    }
+    a:hover{
+        background-color: #FFD950;
+        border-radius: 20px;
+    }
+}
+main{
+    flex: 8;
+}
+footer{
+    flex: 1;
+    text-align: center;
+}
+
+/*모바일 화면 크기 - 너비 400px까지의 범위*/
+@media(max-width: 400px){
+    .header{
+        height: 60px;
+    }
+    .logo{
+        height: 45px;
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .bar_button{
+        display: block;
+        margin-left: auto;
+        padding-top: 15px;
+        cursor: pointer;
+    }
+    .bar{
+        display: none;
+        float: right;
+        flex-direction: column;
+        background-color: rgb(24, 131, 229, 0.3);
+        border-radius: 20px;
+        width: 100px;
+        h4 > a{
+            display: block;
+            text-align: center;
+        }
+    }
+}
